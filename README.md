@@ -16,6 +16,7 @@
 ## Datasets:
 * <a href="https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction">Kaggle Flight Price Prediction</a>
 * <a href="https://www.transtats.bts.gov/fuel.asp">Bureau of Transportation Statistics</a>
+* <a href="https://www.eia.gov/dnav/pet/hist/eer_epjk_pf4_rgc_dpgD.htm">US Energy Information Administration</a>
 
 ## Tasks:
 * Database (PostGres) - Sarje, Juhita
