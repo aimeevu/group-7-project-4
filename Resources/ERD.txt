@@ -1,0 +1,39 @@
+airline
+---
+airlineid
+airlinename
+designator
+
+class
+---
+classid
+classname
+
+flight
+---
+flightid
+airlineid FK >- airline.airlineid
+flightdate
+flightnumber
+stopid FK >- stop.stopid
+departuretime
+locationfromid FK >- location.locationid
+locationtoid FK >- location.locationid
+timetaken
+arrivaltime
+
+location
+---
+locationid
+locationname
+
+flight_class
+--
+flightid FK >- flight.flightid
+classid FK >- class.classid
+price
+
+stop
+---
+stopid
+stopname
