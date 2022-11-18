@@ -4,10 +4,10 @@ airlineid
 airlinename
 designator
 
-class
+seatclass
 ---
-classid
-classname
+seatclassid
+seatclass
 
 flight
 ---
@@ -29,8 +29,9 @@ locationname
 
 flight_class
 --
+flightclassid
 flightid FK >- flight.flightid
-classid FK >- class.classid
+seatclassid FK >- seatclass.seatclassid
 price
 
 stop
