@@ -312,7 +312,7 @@ section {
 }
   
 .section-bg {
-    background-color: #fafdfb;
+    background-color: #EDF7FD;
 }
   
 .section-title {
@@ -421,6 +421,67 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team {
+  padding: 60px 0 0 0;
+}
+
+.team .member {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.team .member img {
+  height: 350px;
+  padding-bottom: 20px;
+}
+
+.team .member .member-info {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+.team .member .member-info-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  transition: bottom 0.4s;
+}
+
+.team .member .member-info-content h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.team .member .member-info-content span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+.team .member:hover .member-info {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.team .member:hover .member-info-content {
+  bottom: 60px;
+  transition: bottom 0.4s;
+}
+/*--------------------------------------------------------------
 # Process Section
 --------------------------------------------------------------*/
 
@@ -509,3 +570,15 @@ section {
 /*--------------------------------------------------------------
 # Price Calculator Section
 --------------------------------------------------------------*/
+.calculator .container button[type=submit] {
+  background:#6CBEED;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.calculator .container button[type=submit]:hover {
+  background: #49AEE9;
+}
