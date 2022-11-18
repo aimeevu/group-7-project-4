@@ -28,4 +28,16 @@
 * HTML/CSS Front-end - Aimee, Heesoo
 * PowerPoint/Slide Deck - Heesoo
 
-Site: <a href="https://aimeevu.github.io/group-7-project-4/templates/#">https://aimeevu.github.io/group-7-project-4/templates/#</a>
+## ETL Process: 
+
+## Machine Learning Algorithm:
+
+## Website Design:
+### Front-End
+
+
+### Back-End
+
+## Final Product: 
+
+<p>Site: <a href="https://aimeevu.github.io/group-7-project-4/templates/#">https://aimeevu.github.io/group-7-project-4/templates/#</a></p>
