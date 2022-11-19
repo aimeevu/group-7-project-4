@@ -1,0 +1,12 @@
+-- for airlines
+SELECT airlineid, airline, designator FROM public.airline ORDER BY airlineid;
+
+-- for seatclass
+SELECT seatclassid, seatclass FROM public.seatclass ORDER BY seatclassid;
+
+-- for locations
+SELECT locationid, locationname FROM public.location ORDER BY locationid;
+
+-- for stops
+SELECT stopid, stop FROM public.stop ORDER BY stopid;
+
