@@ -1,5 +1,5 @@
 import numpy as np
-
+import collections
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
@@ -27,12 +27,12 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 
 # Save reference to the table
-Airline = Base.classes.airline
-Location = Base.classes.location
-SeatClass = Base.classes.seatclass
-Stop = Base.classes.stop
-Flight = Base.classes.flight
-FlightClass = Base.classes.flight_class
+# Airline = Base.classes.airline
+# Location = Base.classes.location
+# SeatClass = Base.classes.seatclass
+# Stop = Base.classes.stop
+# Flight = Base.classes.flight
+# FlightClass = Base.classes.flight_class
 
 
 
@@ -47,19 +47,20 @@ app = Flask(__name__)
 
 @app.route('/')
 def test():
-    # results = cursor.execute('SELECT public."Agency".agency_name, CAST(sum(public."Offense".cleared) as bigint),\
-    #      CAST(sum(public."Offense".actual) as bigint) FROM public."Agency" Left Join public."Offense" \
-    #         on public."Offense".ori = public."Agency".ori where public."Offense".actual is not null \
-    #             group by public."Agency".agency_name;')
-    # rows = cursor.fetchall()
     results = cursor.execute("SELECT airlineid, airline, designator \
                             FROM public.airline ORDER BY airlineid;")
     rows = cursor.fetchall()
+    x = []
+
     for row in rows:
         d = collections.OrderedDict()
         d['airlineid'] = row[0]
         d['airline'] = row[1]
         d['designator'] = row[2]
+        x.append(d)
+    
+    return jsonify(x)
+
 
 # @app.route('/')
 # def home():
