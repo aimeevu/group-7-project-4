@@ -470,6 +470,10 @@ section {
   color: #fff;
 }
 
+.team .member .member-info-content p {
+  color: #fff;
+}
+
 .team .member .member-info-content span {
   font-style: italic;
   display: block;
@@ -563,21 +567,21 @@ section {
 /*--------------------------------------------------------------
 # Website Design Section
 --------------------------------------------------------------*/
-.website .icon-box {
+.lessons-learned .icon-box {
   margin-bottom: 20px;
   padding: 30px 15px;
   border-radius: 6px;
   background: #fff;
 }
 
-.website .icon-box i {
+.lessons-learned .icon-box i {
   float: left;
   color: #6CBEED;
   font-size: 40px;
   line-height: 0;
 }
 
-.website .icon-box p {
+.lessons-learned .icon-box p {
   margin-left: 70px;
   line-height: 24px;
   font-size: 14px;
