@@ -683,6 +683,20 @@ section {
   background: #49AEE9;
 }
 
+.calculator .calc-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+}
+
+.calculator .calc-form select {
+  background-color: #49AEE9;
+  border-color: #49AEE9;
+  color: #fff;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
