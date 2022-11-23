@@ -35,9 +35,13 @@
 ## Website Design:
 ### Front-End
 
+<p>Wireframe</p>
+<img src="">
 
 ### Back-End
 
 ## Final Product: 
+
+<img src="assets/imgs/LandingPage.png">
 
 <p>Site: <a href="https://aimeevu.github.io/group-7-project-4/templates/#">https://aimeevu.github.io/group-7-project-4/templates/#</a></p>
