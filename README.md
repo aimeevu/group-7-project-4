@@ -75,37 +75,37 @@ Design Inspiration:
 ## Tableau Visualizations
 <a href="https://public.tableau.com/app/profile/gant1855/viz/FlightPredictions_16687315951740/FlightPredicitionAnaylsis3">Tableau Public Link</a>
 
-<h2>Total Revenue per Airline by Class</h2>
+<h4>Total Revenue per Airline by Class</h4>
 
 <img src="Tab WB images/Viz 1.png">
 
 <p>Sum of Price for each Flight. Colors are displayed to show details about the two classes. This visualization represents the total revenue per airline and more-so broken down per class. With economy only averaging around 15 million per fiscal year and business class averaging around 45-47 million per year.</p>
 
-<h2>Average Monthly Revenue per Airline</h2>
+<h4>Average Monthly Revenue per Airline</h4>
 
 <img src="Tab WB images/Viz 2.png">
 
 <p>Count of price for each airline broken down by class. Color shows details about each airline. Details are shown for flight and the data is filtered on median of price, which includes values less than or equal to 20,000 for monthly averages per airline.</p>
 
-<h2>Economy Class vs Business Class</h2>
+<h4>Economy Class vs Business Class</h4>
 
 <img src="Tab WB images/Viz 3.png">
 
 <p>This visualization details are shown and broken down by flights and the per dollar amoutn for said flights that each class member takes. The data is filtered on count of <a href="Resources/Clean_Dataset.csv">Clean_Dataset.csv</a>, which includes values less than or equal to 206,666. The view is filtered by class, flight, and lastly average price.</p>
 
-<h2>Arrival vs Departure time in each city - Delhi</h2>
+<h4>Arrival vs Departure time in each city - Delhi</h4>
 
 <img src="Tab WB images/Viz 4.png">
 
 <p>Arrival and departure time has been filtered and broken down to cities that passengers on a regular basis. The data is filtered on destination city, which keeps 6 of 6 airlines.</p>
 
-<h2>Average Sale Revenue per Airline for Econ Class</h2>
+<h4>Average Sale Revenue per Airline for Econ Class</h4>
 
 <img src="Tab WB images/Viz 5.png">
 
 <p>In this visualization, we created a bin for an absolute median price for average sale per tickets for each airline economy class. The point for this investigation was to see the vast difference and/or trends compared to business class. The plot of average of price for price (bin) is broken down by date year. Color shows details about airline. Details are shown for date year.</p>
 
-<h2>Average Price for Airline vs Stops per Class</h2>
+<h4>Average Price for Airline vs Stops per Class</h4>
 
 <img src="Tab WB images/Viz 6.png">
 
