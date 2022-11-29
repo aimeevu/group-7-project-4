@@ -61,4 +61,15 @@ We decided to utilize the K's Nearest Neighbors Regression model to predict a pr
   
   ![image](https://user-images.githubusercontent.com/91276925/204410960-fc9a9869-c39b-4ead-9cd4-62041eb76bdf.png)
 
-  
+## Website Tools:
+1. <a href="https://bootstrapmade.com/">BootstrapMade</a>
+2. <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>
+3. Google Fonts
+4. <a href="https://coolors.co/">Coolors</a>
+5. <a href="app.py">Flask API</a>
+6. <a href="assets/js">JavaScript</a>
+
+## Tableau Visualizations
+<a href="https://public.tableau.com/app/profile/gant1855/viz/FlightPredictions_16687315951740/FlightPredicitionAnaylsis3">Tableau Public Link</a>
+
+<img src="Tab WB images/Viz 1.png">
