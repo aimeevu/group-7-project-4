@@ -72,7 +72,7 @@ Design Inspiration:
 5. <a href="app.py">Flask API</a>
 6. <a href="assets/js">JavaScript</a>
 
-## Tableau Visualizations
+## Tableau Visualizations:
 <a href="https://public.tableau.com/app/profile/gant1855/viz/FlightPredictions_16687315951740/FlightPredicitionAnaylsis3">Tableau Public Link</a>
 
 <h4>Total Revenue per Airline by Class</h4>
@@ -110,3 +110,13 @@ Design Inspiration:
 <img src="Tab WB images/Viz 6.png">
 
 <p>Average of price for each airline broken down by class and stops. Color shows details about airline. The data is filtered on flight to find a correlation on price affects the number of stops for 1,561 members. Looking at the data, there are different variables that can affect each class, however the trend and amount of revenue brought in from business class and economy class are applicable.</p>
+
+## Final Site
+<a href="https://aimeevu.github.io/group-7-project-4/templates/index.html">Link to site</a>
+
+<img src="assets/imgs/LandingPage.png">
+
+<img src="assets/imgs/VisualizationsPage.png">
+
+<img src="assets/imgs/DataPage.png">
+
