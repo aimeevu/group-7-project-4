@@ -1,95 +1,51 @@
-import numpy as np
-import collections
-import sqlalchemy
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, func
-import psycopg2
-from flask import Flask, jsonify, render_template
+# include ------------------------------------------------------------------------
+from flask import Flask, render_template, request, jsonify
+import pickle
+#import numpy as np
+#import collections
 
-#################################################
-# Database Setup
-#################################################
-SQL_Password = input('Please enter your localhost Postgresql password: ')
+# initialize ---------------------------------------------------------------------
+app = Flask(__name__, static_folder='assets')
 
-DB_Name = 'FlightDB'
+# Load the model back from file in the current working directory
+pickle_filename = "Model_KNN.pkl"  
+with open(pickle_filename, 'rb') as file: clf = pickle.load(file)
 
-conn_string = f"host='localhost' dbname='FlightDB' user='postgres' password='{SQL_Password}'"
-conn = psycopg2.connect(conn_string)
-cursor = conn.cursor()
+# flight price inits
+current_fuel_price = 3.198
+mins = 580
 
-# create engine, connect to postgresql DB
-engine = create_engine(f'postgresql://postgres:{SQL_Password}@localhost/{DB_Name}')
+# root route ---------------------------------------------------------------------
+@app.route("/")
+def index():
+    return render_template("index.html")
 
-# reflect an existing database into a new model
-Base = automap_base()
-# reflect the tables
-Base.prepare(engine, reflect=True)
-
-# Save reference to the table
-# Airline = Base.classes.airline
-# Location = Base.classes.location
-# SeatClass = Base.classes.seatclass
-# Stop = Base.classes.stop
-# Flight = Base.classes.flight
-# FlightClass = Base.classes.flight_class
-
-
-
-#################################################
-# Flask Setup
-#################################################
-app = Flask(__name__)
-
-#################################################
-# Flask Routes
-#################################################
-
-@app.route('/')
-def test():
-    results = cursor.execute("SELECT airlineid, airline, designator \
-                            FROM public.airline ORDER BY airlineid;")
-    rows = cursor.fetchall()
-    x = []
-
-    for row in rows:
-        d = collections.OrderedDict()
-        d['airlineid'] = row[0]
-        d['airline'] = row[1]
-        d['designator'] = row[2]
-        x.append(d)
+# predict route ------------------------------------------------------------------
+@app.route("/predict", methods=['GET','POST'])
+def predict():
+    dataInput = (request.json)
     
-    return jsonify(x)
+    x_in = [dataInput['airline'], dataInput['from_loc'], dataInput['to_loc'], mins, dataInput['seatclass'], dataInput['depart'], dataInput['arrive'], dataInput['stop'], current_fuel_price]
 
+    # Use the fitted model to predict the y-value of the sample
+    y_pred = clf.predict([x_in])
 
-# @app.route('/')
-# def home():
-#     return render_template('index.html')
+    # Return predicted value
+    return jsonify({"ticketprice": y_pred[0][0]})
 
-# @app.route("/")
-# def welcome():
-#     # List all available api routes
-#     return (
-#         f"Available routes:<br/>"
-#         f"/api/v1.0/airlines<br/>"
-#         f"/api/v1.0/seatclass<br/>"
-#         f"/api/v1.0/locations<br/>"
-#         f"/api/v1.0/stops"
-#     )
+# turn off cache -----------------------------------------------------------------
+@app.after_request
+def add_header(r):
+    """
+    Add headers to both force latest IE rendering engine or Chrome Frame,
+    and also to cache the rendered page for 10 minutes.
+    """
+    r.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    r.headers["Pragma"] = "no-cache"
+    r.headers["Expires"] = "0"
+    r.headers['Cache-Control'] = 'public, max-age=0'
+    return r
 
-# @app.route("/api/v1.0/airlines")
-# def welcome():
-#     # Create session link from Python to DB
-#     session = Session(engine)
-
-#     # return airlines SQL data
-#     results = engine.execute("SELECT airlineid, airline, designator \
-#                             FROM public.airline ORDER BY airlineid;").all()
-
-#     session.close()
-
-
-
-#################################################
+# --------------------------------------------------------------------------------
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port=5000,debug=True)
