@@ -14,10 +14,10 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-icons/bootstrap-icons.css')}}">
+        <link rel="stylesheet" href="../assets/bootstrap-icons/bootstrap-icons.css">
 
         <!-- CSS Link -->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+        <link rel="stylesheet" href="../assets/css/style.css">
     </head>
 
     <body>
@@ -90,8 +90,8 @@
                             <div class="card">
                                 <img src="../assets/imgs/HeaderImage.jpg" class="card-img-top">
                                 <div class="card-body">
-                                    <h5 class="card-title">Disclaimer</h5>
-                                    <p class="card-text">Text regarding dataset disclaimer goes here</p>
+                                    <h5 class="card-title">Dataset Limitations</h5>
+                                    <p class="card-text">With regards to the dataset, we were limited to one that contained only foreign airlines. We have concluded that this was due to limitations revolving around the availability of the data. Any domestic data that we identified required calling to a subscription API and we would run into potential legality issues through webscraping.</p>
                                 </div>
                             </div>
                         </div>
@@ -230,49 +230,49 @@
                             <div class="icon-box">
                                 <i class="bi bi-airplane"></i>
                                 <h4>ETL Process</h4>
-                                <p>Holidays are right around the corner. It’s time for people to put their travel plans on the calendars. </p>
+                                <p>CSV Files from Kaggle were loaded and merged into Python via Jupyter Notebook.</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="icon-box">
                                 <i class="bi bi-airplane"></i>
                                 <h4>Database</h4>
-                                <p>Whether you’re trying to make that last minute flight for Thanksgiving dinner or planning months in advance for that beach vacation trip, what will prices look like?</p>
+                                <p>The data was normalized, cleaned, and then inserted into PostgreSQL from Jupyter Notebook.</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="icon-box">
                                 <i class="bi bi-airplane"></i>
                                 <h4>Flask API</h4>
-                                <p>The goal of this project is to predict the flight price on a particular future date using a machine learning algorithm that will train historical data.</p>
+                                <p>This tool was set up in order to connect the data to the site to calculate the flight prices.</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="icon-box">
                                 <i class="bi bi-airplane"></i>
                                 <h4>Tableau</h4>
-                                <p>Holidays are right around the corner. It’s time for people to put their travel plans on the calendars. </p>
+                                <p>Using Tableau, visualizations were created to provide further insight into the Kaggle dataset.</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="icon-box">
                                 <i class="bi bi-airplane"></i>
                                 <h4>Website Design</h4>
-                                <p>Whether you’re trying to make that last minute flight for Thanksgiving dinner or planning months in advance for that beach vacation trip, what will prices look like?</p>
+                                <p>By utilizing tools like boostrap, Google fonts, and Coolors, this site was created based on a template from BootstrapMade.</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="icon-box">
                                 <i class="bi bi-airplane"></i>
                                 <h4>JavaScript</h4>
-                                <p>The goal of this project is to predict the flight price on a particular future date using a machine learning algorithm that will train historical data.</p>
+                                <p>Functionality of the button heavily relies on JavaScript in order to initiate the calculation on the backend and display the results on the frontend.</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="icon-box">
                                 <i class="bi bi-airplane"></i>
                                 <h4>Machine Learning</h4>
-                                <p>The goal of this project is to predict the flight price on a particular future date using a machine learning algorithm that will train historical data.</p>
+                                <p>Database was queried from PostgreSQL into a tailor-made pandas dataframe for the KNN Regression Model in order to create a price predictor.</p>
                             </div>
                         </div>
                     </div>
@@ -321,7 +321,7 @@
                     <div class="row visual-container">
                         <div class="col-lg-4 col-md-6 visual-item">
                             <div class="visual-wrap">
-                                <img src="../assets/imgs/HeaderImage.jpg">
+                                <img src="../Tab WB images/Viz 1.png">
                                 <div class="visual-info">
                                     <a href="visual.html#visual-details"><h4>Visual 1</h4></a>
                                 </div>
@@ -330,7 +330,7 @@
 
                         <div class="col-lg-4 col-md-6 visual-item">
                             <div class="visual-wrap">
-                                <img src="../assets/imgs/HeaderImage.jpg">
+                                <img src="../Tab WB images/Viz 2.png">
                                 <div class="visual-info">
                                     <a href="visual.html#visual-details-2"><h4>Visual 2</h4></a>
                                 </div>
@@ -339,7 +339,7 @@
 
                         <div class="col-lg-4 col-md-6 visual-item">
                             <div class="visual-wrap">
-                                <img src="../assets/imgs/HeaderImage.jpg">
+                                <img src="../Tab WB images/Viz 3.png">
                                 <div class="visual-info">
                                     <a href="visual.html#visual-details-3"><h4>Visual 3</h4></a>
                                 </div>
@@ -350,7 +350,7 @@
                     <div class="row visual-container">
                         <div class="col-lg-4 col-md-6 visual-item">
                             <div class="visual-wrap">
-                                <img src="../assets/imgs/HeaderImage.jpg">
+                                <img src="../Tab WB images/Viz 4.png">
                                 <div class="visual-info">
                                     <a href="visual.html#visual-details-4"><h4>Visual 4</h4></a>
                                 </div>
@@ -359,7 +359,7 @@
 
                         <div class="col-lg-4 col-md-6 visual-item">
                             <div class="visual-wrap">
-                                <img src="../assets/imgs/HeaderImage.jpg">
+                                <img src="../Tab WB images/Viz 5.png">
                                 <div class="visual-info">
                                     <a href="visual.html#visual-details-5"><h4>Visual 5</h4></a>
                                 </div>
@@ -368,7 +368,7 @@
 
                         <div class="col-lg-4 col-md-6 visual-item">
                             <div class="visual-wrap">
-                                <img src="../assets/imgs/HeaderImage.jpg">
+                                <img src="../Tab WB images/Viz 6.png">
                                 <div class="visual-info">
                                     <a href="visual.html#visual-details-6"><h4>Visual 6</h4></a>
                                 </div>
@@ -504,7 +504,7 @@
 
         <!--<script src="../assets/js/main.js"></script>-->
         <script src="https://d3js.org/d3.v5.min.js"></script>
-        <script src="{{ url_for('static', filename='js/app.js') }}"></script>   
+        <script src="{{ url_for('static', filename='../assets/js/app.js') }}"></script>   
 
     </body>
 </html>
