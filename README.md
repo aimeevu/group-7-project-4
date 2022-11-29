@@ -29,6 +29,10 @@
 * PowerPoint/Slide Deck - Heesoo
 
 ## ETL Process: 
+The ETL process of preparing and cleaning our data was a demanding task and took up the majority of the project's duration.
+  1. Took the economy and business csv raw data from Kaggle, cleaned, and concatenated the datasets together, then converted the final Data Frame to a csv.
+  2. Created and set up a Postgresql (relational) database that read in our data frames from Python into several different tables based off a normalized schema
+  3. Created the initial testing and training data for the ML model.
 
 ## Machine Learning Algorithm:
 
