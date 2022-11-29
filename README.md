@@ -35,6 +35,7 @@ The ETL process of preparing and cleaning our data was a demanding task and took
   3. Created the initial testing and training data for the ML model.
 
 ## Machine Learning Algorithm:
+1. 
 
 ## Website Design:
 ### Front-End
