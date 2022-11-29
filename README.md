@@ -48,4 +48,17 @@ The ETL process of preparing and cleaning our data was a demanding task and took
 
 
 ## Machine Learning Algorithm:
-1. 
+We decided to utilize the K's Nearest Neighbors Regression model to predict a price based on the various options one would prefer when looking to book a flight. 
+  1. took the final csv from our data and broke our data out into the proper training and testing data sets. 
+  
+  ![image](https://user-images.githubusercontent.com/91276925/204410660-d730d7d3-4100-492f-b1f0-74aeb4b80203.png)
+  
+  2. Created the KNN model by testing various numbers of neighbors in order to find the best number in which to predict our prices with
+
+  ![image](https://user-images.githubusercontent.com/91276925/204410867-3f829325-d8c0-4d86-95f8-e45428f1cf96.png)
+ 
+  3. Used the fitted model to predict the value of an input sample
+  
+  ![image](https://user-images.githubusercontent.com/91276925/204410960-fc9a9869-c39b-4ead-9cd4-62041eb76bdf.png)
+
+  
