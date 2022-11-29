@@ -116,7 +116,7 @@ Design Inspiration:
 
 <img src="assets/imgs/LandingPage.png">
 
-<img src="assets/imgs/VisualizationsPage.png">
+<img src="assets/imgs/VisualizationPage.png">
 
 <img src="assets/imgs/DataPage.png">
 
