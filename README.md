@@ -31,15 +31,19 @@
 ## ETL Process: 
 The ETL process of preparing and cleaning our data was a demanding task and took up the majority of the project's duration.
   1. Took the economy and business csv raw data from Kaggle, cleaned, and concatenated the datasets together, then converted the final Data Frame to a csv.
+  
   ![image](https://user-images.githubusercontent.com/91276925/204409471-e8017d12-aedd-48d0-b4fe-eb137a002d86.png)
 
   2. Created and set up a Postgresql (relational) database that read in our data frames from Python into several different tables based off a normalized schema
+  
   ![image](https://user-images.githubusercontent.com/91276925/204409570-8f4d46f4-8075-4d2f-8d46-d0d4e968d619.png)
 
   3. Built out the seperate data frames that would contain the proper data for the ML model.
+  
   ![image](https://user-images.githubusercontent.com/91276925/204409644-6f2aa6ec-c14b-4e30-bb9d-7009d3ee1917.png)
   
-  4. Constructed final SQL query containing the specific data for our predictive-pricing ML model, read the query into Postgresql, then converted the returned query data into a dataframe and exported the csv file.
+  4. Constructed final SQL query containing the specific data for our predictive-pricing ML model, read the query into Postgresql, then converted the returned query    data into a dataframe and exported the csv file.
+
 ![image](https://user-images.githubusercontent.com/91276925/204410142-f1c921cd-5a38-435b-9bf8-bcee151e8b41.png)
 
 
